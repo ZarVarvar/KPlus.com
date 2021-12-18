@@ -1,0 +1,1 @@
+INSERT INTO `computers`(`id_cat`, `id_podcat`, `name`, `proc`, `video`, `ozu`, `oc`, `hddssd`, `price`) VALUES ('1','0','DEXP Mars E326','i3-10100F','GeForce GTX 1050 Ti','8 ГБ','Windows 10','SSD 512 ГБ','49999')
