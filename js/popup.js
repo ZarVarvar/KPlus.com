@@ -1,8 +1,7 @@
 const popup_links = document.querySelectorAll('.popup_link');
-const body = document.querySelector('bidy');
 const lockPadding = document.querySelectorAll('.lock_padding');
 let unlock = true;
-
+ 
 if(popup_links.length > 0){
 for (let index = 0; index < popup_links.length; index++){
     const popup_link = popup_links[index];

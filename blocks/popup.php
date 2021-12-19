@@ -31,6 +31,30 @@
             </div>
         </div>
 
+        <div id="popup_order" class="popup">
+        <div class="overlay js_overlay"></div>
+            <div class="popup_body">
+                <div class="popup_content">
+                    <a href="#" class="popup_close">X</a>
+                    <div class="popup_title">Оформление заказа</div>
+                    <div class="popup_text">
+                    <h3>Оформление заказа</h3><i class=" js_close-popup"></i>
+		<div class='js_error'></div>
+		<input type="hidden" name="product-id">
+		<input type="text" name="fio" placeholder="Ваше имя">
+		<input type="text" name="phone" placeholder="Телефон">
+		<input type="text" name="email" placeholder="e-mail">
+		<textarea placeholder="Комментарий" name="comment"></textarea>
+		<button class="js_send">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
         
 
 

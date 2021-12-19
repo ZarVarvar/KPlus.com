@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="shortcut icon" href="/img/kplus.png" type="image/png">
     <link rel="stylesheet" href="/style/popup.css">
-    <title>KPlus</title>
+    <title>Каталог</title>
 </head>
 
 <body>

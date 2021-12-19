@@ -29,13 +29,13 @@
 
 .popup_title {
     font-size: 40px;
-    font-family: 'hatten';
+    font-family: 'Calibri';
     margin: 0px, 0px, 1em, 0px;
 }
 
 .popup_text {
     font-size: 24px;
-    font-family: 'Pribambas';
+    font-family: 'Calibri';
 }
 
 .popup_close {
@@ -47,6 +47,7 @@
     background-color: #143441;
     border-radius: 3px;
     padding: 5px;
+    text-decoration: none;
 }
 
 .popup.open {
@@ -60,3 +61,33 @@
     width: 260px;
 }
 
+.popup input[type=text] {
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+	border-bottom: 1px solid #666;
+	padding-bottom: 5px;
+}
+
+.popup textarea {
+	margin-top: 20px;
+	border: none;
+	width: 100%;
+	border-bottom: 1px solid #666;
+	border-left: 1px solid #666;
+	padding: 10px;
+	min-height: 150px;
+}
+
+.popup button {
+	display: block;
+	background: #002085;
+	border: none;
+	text-transform: uppercase;
+	padding: 10px 30px 10px 30px;
+	color: white;
+	width: 300px;
+	margin: 10px auto;
+    cursor: pointer;
+}

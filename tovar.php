@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="./style/tovar.css">
     <link rel="shortcut icon" href="/img/kplus.png" type="image/png">
     <link rel="stylesheet" href="/style/popup.css">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/ajax.js"></script>
     <title>KPlus</title>
 </head>
 
 <body>
 
-    <?php require_once "blocks/header.php";
-  
-    include "PdoConnect.php";
+    <?php 
+    spl_autoload_register(function ($class) {
+        include '' . $class . '.php';
+    });
+    
     $PDO = PdoConnect::getInstance();
   
   $result = $PDO->PDO->query("SELECT * FROM `computers`");
@@ -25,6 +29,8 @@
   while ($productInfo = $result->fetch()){
       $products[] = $productInfo;
   }
+
+  require_once "blocks/header.php";
      ?>
 
 
@@ -78,17 +84,25 @@
 
             <span class="tovar_text_har" id="tovar_text_price"><?=$product['price']?> ₽</span>
 
-            <button class="tovar_btn product__btn">В корзину</button>
+            <button class="tovar_btn popup_link" href="#popup_order">Купить</button>
 
 
         </div>
         <?endforeach?>
     </div>
 
+
+    
+
     <?php include "blocks/popup.php" ?>
+   
 
     <script src="/js/menu.js"></script>
     <script src="/js/popup.js"></script>
+    <script src="/js/ajax.js"></script>
+
+
+
 
 </body>
 
