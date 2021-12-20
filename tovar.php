@@ -43,37 +43,38 @@
         </div>
         <ul>
             <li id="catalog_name_zagolovok">КАТАЛОГ</li>
-            <li class="catalog_name"><a href="">Компьютеры</a></li>
-            <li class="catalog_name"><a href="">Ноутбуки</a></li>
+            <li class="catalog_name"><a href="/tovar.php">Компьютеры</a></li>
+            <li class="catalog_name"><a href="/nout.php">Ноутбуки</a></li>
             <li class="catalog_name_error"><span class="catalog_name">Комлектующие</span>
                 <ul>
-                    <li class="catalog_podname"><a href="">МАТЕРИНСКИЕ ПЛАТЫ</a></li>
-                    <li class="catalog_podname"><a href="">ПРОЦЕССОРЫ</a></li>
-                    <li class="catalog_podname"><a href="">ВИДЕОКАРТЫ</a></li>
-                    <li class="catalog_podname"><a href="">ОПЕРАТИВНАЯ ПАМЯТЬ</a></li>
-                    <li class="catalog_podname"><a href="">БЛОКИ ПИТАНИЯ</a></li>
-                    <li class="catalog_podname"><a href="">НАКОПИТЕЛИ ДАННЫХ</a></li>
-                    <li class="catalog_podname"><a href="">СИСТЕМА ОХЛАЖДЕНИЯ</a></li>
+                    <li class="catalog_podname"><a href="mat.php">МАТЕРИНСКИЕ ПЛАТЫ</a></li>
+                    <li class="catalog_podname"><a href="proc.php">ПРОЦЕССОРЫ</a></li>
+                    <li class="catalog_podname"><a href="videocards.php">ВИДЕОКАРТЫ</a></li>
+                    <li class="catalog_podname"><a href="ozu.php">ОПЕРАТИВНАЯ ПАМЯТЬ</a></li>
+                    <li class="catalog_podname"><a href="blocks_volt.php">БЛОКИ ПИТАНИЯ</a></li>
+                    <li class="catalog_podname"><a href="hddssd.php">НАКОПИТЕЛИ ДАННЫХ</a></li>
+                    <li class="catalog_podname"><a href="holod.php">СИСТЕМА ОХЛАЖДЕНИЯ</a></li>
                 </ul>
             </li>
             <li class="catalog_name_error"><span class="catalog_name">Периферия</span>
         <ul>
-            <li class="catalog_podname"><a href="">Мониторы</a></li>
-            <li class="catalog_podname"><a href="">Мыши</a></li>
-            <li class="catalog_podname"><a href="">Клавиатуры</a></li>
-            <li class="catalog_podname"><a href="">Наушники</a></li>
+            <li class="catalog_podname"><a href="monitors.php">Мониторы</a></li>
+            <li class="catalog_podname"><a href="mouse.php">Мыши</a></li>
+            <li class="catalog_podname"><a href="keyboard.php">Клавиатуры</a></li>
+            <li class="catalog_podname"><a href="audio.php">Наушники</a></li>
         </ul>
         </li>
         </ul>
     </div>
 
+<button class="add popup_link" href="#popup_bd_add">Добавить</button>
 
     <div class="conteiner_tovar">
         <?foreach ($products as $product):?>
         <div class="tovar product" data-id="<?=$product['id_tov']?>">
             <div class="tovar_img_box">
                 <span class="tovar_text"><?=$product['name']?></span>
-                <img class="tovar_img" src="/img/sis-12 1.svg" alt="">
+                <img class="tovar_img" src="<?=$product['img']?>" alt="">
             </div>
             <span class="tovar_text_har">
                 (Процессор: <span><?=$product['proc']?></span>, Видеокарта: <span><?=$product['video']?></span>, ОЗУ:

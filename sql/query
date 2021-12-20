@@ -1,1 +1,5 @@
 INSERT INTO `computers`(`id_cat`, `id_podcat`, `name`, `proc`, `video`, `ozu`, `oc`, `hddssd`, `price`) VALUES ('1','0','DEXP Mars E326','i3-10100F','GeForce GTX 1050 Ti','8 ГБ','Windows 10','SSD 512 ГБ','49999')
+INSERT INTO `videocards`(`name`, `proc`, `video`, `ozu`, `oc`, `hddssd`, `screen`, `price`, `img`) VALUES ('Acer Predator Triton 300','Intel Core i5 9300H','GeForce GTX 1650 4 ГБ','RAM 8 ГБ','Windows 10','SSD 512 Гб','17.3 Full HD 1920x1080','102000', '/img/4zu3_Acer_Predator_Helios_300.svg');
+INSERT INTO `processors`(`name`, `count_yader`, `count_potok`, `made`, `cache`, `price`, `img`, `socket`) VALUES ('AMD Ryzen 5','4','8','AMD','2 мб','9999','/img/proc.svg','AM3+');
+INSERT INTO `videocardss`(`name`, `gddr`, `razryd`, `made`, `volt`, `price`, `img`) VALUES ('GeForce 1050 Ti GTX','4 ГБ GDDR5','192 бит','Nvidia','150 Вт','30000','/img/video.svg');
+INSERT INTO `ozu`(`name`, `ram`, `tact`, `made`, `time`, `price`, `img`) VALUES ('Viper','16GB DDR4','2400 МГц','Viper','20-20-20','4000','img/ozu.svg');

@@ -19,7 +19,7 @@ happyNewYear = {
 
 	sendOrder : () => {
 
-		let url = 'blocks/ajax.php',
+		let url = 'D:\programms\openserver\domains\KPlus.com\blocks\ajax.php',
 			data = {
 				'id' : $('[name=product-id]').val(),
 				'fio' : $('[name=fio]').val(),

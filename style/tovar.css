@@ -280,3 +280,9 @@ body {
 .catalog_name_error{
     list-style: none;
 }
+
+.add{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

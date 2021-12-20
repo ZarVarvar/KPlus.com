@@ -23,18 +23,18 @@
                  <span class="catalog_btn_text">Комьютеры</span>
                  <img class="catalog_btn_img" src="/img/sis-12 1.svg" alt="">
                 </button>
-             <button class="catalog_btn" type="submit">
+             <button class="catalog_btn" onclick="document.location='nout.php'" type="submit">
              <span class="catalog_btn_text">Ноутбуки</span>
                  <img class="catalog_btn_img" src="/img/nout.svg" alt="">
                 </button>
-             <button class="catalog_btn" id="btn_last" type="submit">
+             <button class="catalog_btn" onclick="document.location='mat.php'" id="btn_last" type="submit">
              <span class="catalog_btn_text">Комплектующие</span>
-                 <img class="catalog_btn_img" src="/img/mat.svg" alt="">
+                 <img class="catalog_btn_img" src="/img/mat1.svg" alt="">
                 </button>
     </div>
 
     <div class="div_catalog_btn2">
-             <button id="btn_last" class="catalog_btn" type="submit">
+             <button id="btn_last" class="catalog_btn" onclick="document.location='mouse.php'" type="submit">
              <span class="catalog_btn_text">Периферия</span>
                  <img class="catalog_btn_img" src="/img/mouse.svg" alt="">
                 </button>

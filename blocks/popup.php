@@ -38,7 +38,7 @@
                     <a href="#" class="popup_close">X</a>
                     <div class="popup_title">Оформление заказа</div>
                     <div class="popup_text">
-                    <h3>Оформление заказа</h3><i class=" js_close-popup"></i>
+                    <i class=" js_close-popup"></i>
 		<div class='js_error'></div>
 		<input type="hidden" name="product-id">
 		<input type="text" name="fio" placeholder="Ваше имя">
@@ -46,6 +46,38 @@
 		<input type="text" name="email" placeholder="e-mail">
 		<textarea placeholder="Комментарий" name="comment"></textarea>
 		<button class="js_send">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="popup_bd_add" class="popup">
+        <div class="overlay js_overlay"></div>
+            <div class="popup_body">
+                <div class="popup_content">
+                    <a href="#popup_bd_add" class="popup_close">X</a>
+                    <div class="popup_title">Добавить компьютер</div>
+                    <div class="popup_text">
+                    <form action="blocks\AddTovar.php" method="post">
+                        <p>Название</p>
+                        <input class="edit_name edit_login" type="text" name="name">
+                        <p>Процессор</p>
+                        <input class="edit_login" type="text" name="proc">
+                        <p>Видеокарта</p>
+                        <input class="edit_name edit_login" type="text" name="video">
+                        <p>ОЗУ</p>
+                        <input class="edit_name edit_login" type="text" name="ozu">
+                        <p>ОС</p>
+                        <input class="edit_name edit_login" type="text" name="oc">
+                        <p>Накопитель данных</p>
+                        <input class="edit_name edit_login" type="text" name="hddssd">
+                        <p>Цена компьютера</p>
+                        <input class="edit_login" type="text" name="price">
+                        <button class="registration_bt" type="submit">Добавить товар</button>
+                    </form>
                     </div>
                 </div>
             </div>

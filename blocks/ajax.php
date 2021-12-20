@@ -1,8 +1,5 @@
 <?php
 
-spl_autoload_register(function ($class) {
-	include '' . $class . '.php';
-});
 
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])
 && !empty($_SERVER['HTTP_X_REQUESTED_WITH'])
@@ -26,11 +23,12 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])
 		$response['errors'] = $errors;
 	} 
 	else {
+		include "D:\programms\openserver\domains\KPlus.com\PdoConnect.php";
 		 $PDO = PdoConnect::getInstance();
 
 		$sql = "INSERT INTO `orders` SET `fio` = :fio, `phone` = :phone, `email` = :email, `comment` = :comment, `product_id` = :id";
 
-		$set = $PDO->PDO->query($sql);
+		$set = $PDO->PDO->prepare($sql);
 		$response['res'] = $set->execute($requestData);
 
 		if ($response['res']) {
@@ -38,7 +36,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])
 				Оформлен новый заказ.
 				Заказан товар с ID:" . $requestData['id'] . ", заказчик " . $requestData['fio'];
 
-			mail('keyn-artur@yandex.ru', 'Оформлен новый заказ', $message, 'FROM: admin@happynewyear.mydev');
+			mail('vladimirzarifov@mail.ru', 'Оформлен новый заказ', $message, 'FROM: admin@kplus.mydev');
 		}
 	}
 
