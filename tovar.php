@@ -67,7 +67,6 @@
         </ul>
     </div>
 
-<button class="add popup_link" href="#popup_bd_add">Добавить</button>
 
     <div class="conteiner_tovar">
         <?foreach ($products as $product):?>

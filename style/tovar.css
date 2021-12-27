@@ -196,6 +196,25 @@ body {
     color: #FFFFFF;
 }
 
+.tovar_btn:hover{
+    box-shadow: 0 0 12px blue;
+    -moz-box-shadow: 0 0 12px blue;
+    -o-box-shadow:0 0 12px blue;
+    -ms-box-shadow: 0 0 12px blue;
+    -webkit-box-shadow: 0 0 12px blue;
+
+}
+
+.upravlenie{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 24px;
+    color: red;
+    font-family: "Calibri";
+    text-decoration: none;
+}
+
 /* Меню */
 
 #sidebar.active{
